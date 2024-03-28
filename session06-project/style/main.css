@@ -1,0 +1,92 @@
+.main{
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: larger;
+}
+.main b{
+    color: rgb(61, 61, 61);
+}
+#list-product{
+    padding-top: 50px;
+    padding-left: 20px;
+    gap:30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+.products {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.products:hover .add{
+   opacity: 1;
+}
+.products:hover{
+    border: 2px solid rgb(203, 172, 172);
+}
+.products img{
+    height: 250px;
+    padding-top: 2
+}
+.products p{
+    font-size: 16px;
+    padding-left: 20px;
+}
+.introduce{
+    padding-top: 20px;
+}
+.price {
+    padding-top: 50px;
+    display: flex;
+    gap: 80px;
+}
+.price p:first-child{
+    color: rgb(196, 58, 58);
+}
+.price p:last-child{
+    color: rgb(149, 141, 141);
+    font-size: 13px;
+}
+.carousel-inner{
+    padding-top: 50px;
+    padding-left:0;
+}
+.img-size{
+    height: 400px;
+    width: 900px;
+}
+#carouselExampleInterval{
+    width: 900px;
+    margin-left: 300px;
+    object-fit: cover;
+}
+.add{
+    position: absolute;
+    display: flex;
+    height: 50px;
+    width: 230px;
+    border: none;
+    top:200px;
+    right: 25px;
+    padding-top:20px;
+    gap:20px;
+    opacity: 0;
+    color: white;
+}
+.info{
+    background-color: rgb(242, 139, 83);
+    color: white;
+    border: none;
+}
+.info:active{
+    background-color: rgb(190, 98, 49);
+}
+
+.carousel_slide{
+    padding-top: 170px;
+}
+
+

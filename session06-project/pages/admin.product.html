@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="icon" type="image/x-icon" href="/asset/images/favicon (2).ico">
+    <link rel="stylesheet" href="../style/admin.product.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div>
+        <div class="logo_nava">
+        <ion-icon name="bag-handle" class="logo"></ion-icon>
+        <div>Admin</div>
+    </div>
+    <div class="acc_user">
+        <img src="../asset/images/pngtree-avatar-d0f0lxpbf5spcm-image_2890932.jpg" alt="">
+        <div id="name"></div>
+    </div>
+    </div>
+    <hr class="hr">
+    <div class="page_nav">
+        <a href="./admin.user.html"><div>Quản lý người dùng</div></a>
+        <a href="./admin.product.html"><div  class="current_pag">Quản lý sản phẩm</div></a>
+        <a href="./admin.bill.html"><div>Quản lý hóa đơn</div></a>
+    </div>
+</div>
+<div class="header">
+    <div class="incon_header">
+        <ion-icon name="menu-outline"></ion-icon>
+        <div class="p_header">Danh sách sản phẩm</div>
+    </div>
+</div>
+<hr class="hr_header">
+<div class="addProduct" >
+    <div class="inp">
+        <ion-icon name="search"></ion-icon>
+        <input type="text" placeholder="Tìm kiếm">
+    </div>
+    <div class="but">
+        <button type="button" id="fromAdd">+ Thêm sản phẩm</button>
+    </div>
+</div>
+<form id="from" >
+    <div id="outform">x</div>
+    <h2>Thông tin sản phẩm</h2>
+    <div>
+    <label for="">Sản phẩm</label>
+    <input type="file" id="image" onchange="encodeImageFileAsURL(this)" />
+</div>
+<div>
+    <label for="">Tên</label>
+    <input type="text" id="nameProduct">
+</div>
+<div>
+    <label for="">Giá</label>
+    <input type="number" id="price" min="1">
+</div>
+<div>
+    <label for="">kho</label>
+    <input type="number" id="sold" min="1">
+</div>
+<button type="submit" id="addButton">Thêm +</button>
+</form>
+
+<form id="fromEdit">
+    <div id="outformEdit">x</div>
+    <h2>Sửa thông tin sản phẩm</h2>
+    <div>
+    <label for="">Sản phẩm</label>
+    <input type="file" id="imageEdit" onchange="encodeImageFileAsURL(this)" />
+</div>
+<div>
+    <label for="">Tên</label>
+    <input type="text" id="nameProductEdit">
+</div>
+<div>
+    <label for="">Giá</label>
+    <input type="number" id="priceEdit" min="1">
+</div>
+<div>
+    <label for="">kho</label>
+    <input type="number" id="soldEdit" min="1">
+</div>
+<div>
+    <label for="">Đã bán</label>
+    <input type="number" id="stockEdit" min="0">
+</div>
+<div>
+    <label for="">Đánh giá</label>
+    <input type="number" id="EvaluateEdit" min="0">
+</div>
+<div>
+    <label for="">Số sao</label>
+    <input type="number" id="starEdit" min="0">
+</div>
+<button type="submit" id="EditButton">Sửa</button>
+</form>
+<table id="table" border="1">
+    <!-- <thead>
+        <tr>
+            <th>#</th>
+            <th>id</th>
+            <th>Sản phẩm</th>
+            <th>name</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Đã bán</th>
+            <th>Đánh giá</th>
+            <th>Số sao</th>
+        </tr>
+    </thead>
+    <tbody></tbody> -->
+</table>
+
+<script src="../js/admin.product.js"></script>
+</body>
+</html>

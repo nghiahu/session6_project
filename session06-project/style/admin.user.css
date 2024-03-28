@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav {
+    background-color: rgb(230, 110, 66);
+    width: 250px;
+    height: 730px;
+    position: fixed;
+    padding-left: 20px;
+}
+.logo_nava {
+    display: flex;
+    color: rgb(222, 208, 208);
+    align-items: end;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.logo_nava div{
+    font-size: 40px;
+}
+.logo{
+    font-size: 60px;
+}
+.acc_user {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+.acc_user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+#name{
+    font-size: 21px;
+    color: aliceblue;
+}
+.page_nav {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(222, 208, 208);
+}
+.page_nav div{
+    cursor: pointer !important;
+}
+.hr{
+    margin-right: 10px;
+}
+.current_pag{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-right: 10px;
+    color: rgb(230, 110, 66);
+    border-radius: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header{
+    width: 100%px;
+    height: 60px;
+    margin-left: 251px;
+    background-color: rgb(230, 110, 66);
+   
+}
+.incon_header{
+    font-size: 25px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.p_header{
+    font-size: 18px;
+    text-decoration: underline;
+}
+.hr_header{
+    margin-top: 40px;
+    margin-left: 290px;
+    width: 78%;
+    background-color: rgb(230, 110, 66);
+}
+.table{
+    margin-top: 50px;
+    margin-left: 300px;
+    width: 900px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+.locked {
+    background-color: rgb(224, 41, 41);
+  }
+  
+  .unlocked {
+    background-color: rgb(50, 227, 50);
+  }

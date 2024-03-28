@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav {
+    background-color: rgb(230, 110, 66);
+    width: 250px;
+    height: 730px;
+    position: fixed;
+    padding-left: 20px;
+}
+.logo_nava {
+    display: flex;
+    color: rgb(222, 208, 208);
+    align-items: end;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.logo_nava div{
+    font-size: 40px;
+}
+.logo{
+    font-size: 60px;
+}
+.acc_user {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+.acc_user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+#name{
+    font-size: 21px;
+    color: aliceblue;
+}
+.page_nav {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(222, 208, 208);
+}
+.page_nav div{
+    cursor: pointer !important;
+}
+.hr{
+    margin-right: 10px;
+}
+.current_pag{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-right: 10px;
+    color: rgb(230, 110, 66);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
